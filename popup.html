@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detach Site Blocker</title>
+
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    
+
+    <script src="jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+    <div class="container">
+      <div class="left">
+        <div class="header">
+          <h1>Detach</h1>
+          <p class="underline"></p>
+          <p class="underline2"></p>
+        </div>
+
+        <div class="switch">
+          <input type="checkbox" id="enabled" />
+          <span>ENABLED</span>
+        </div>
+
+        <div class="recommended">
+          <h4>Recommended URLs</h4>
+          <ul id="">
+            <input
+              id="instagram"
+              class="defaultSites"
+              value="https://www.instagram.com/"
+              type="checkbox"
+            />
+            <span>Instagram</span
+            ><br />
+            <input
+              id="facebook"
+              class="defaultSites"
+              value="https://www.facebook.com/"
+              type="checkbox"
+            />
+            <span>Facebook</span
+            ><br />
+            <input
+              id="twitter"
+              class="defaultSites"
+              value="https://twitter.com/"
+              type="checkbox"
+            />
+            <span>Twitter</span
+            ><br />
+          </ul>
+        </div>
+      </div>
+      <div class="right">
+        <div class="blockUrl">
+          <h4>BLOCK URL</h4>
+          <form action="" id="addSite">
+            <input
+              type="text"
+              id="site"
+              placeholder="Enter URL or Keyword"
+            /><button type="submit">BLOCK</button>
+          </form>
+        </div>
+        <div class="blockedList">
+          <h4>BLOCKED LIST</h4>
+          <ul id="blockedList">
+            <li>
+              <span>https://www.instagram.com</span><i class="fas fa-trash"></i>
+            </li>
+            <li>
+              <span>https://www.instagram.com</span><i class="fas fa-trash"></i>
+            </li>
+            <li>
+              <span>https://www.instagram.com</span><i class="fas fa-trash"></i>
+            </li>
+          </ul>
+        </div>
+        <p id="emptyList">You haven't blocked any sites.</p>
+        <button id="clearButton">Clear List</button>
+        <div id="logo">
+          <img src="logo.png" alt="logo">
+        </div>
+      </div>
+    </div>
+    
+    <script src="popup.js"></script>
+  </body>
+</html>
